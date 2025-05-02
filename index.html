@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Capivara FM - Rádio do Amor</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Cabeçalho com logo e nome da estação -->
+    <header>
+      <div class="logo-title">
+        <img src="capivara.png" alt="Logo Capivara FM" class="logo" />
+        <h1>Capivara FM</h1>
+      </div>
+      <p>O som do nosso amor</p>
+      <div class="header-links">
+        <a href="#boas-vindas">Boas-Vindas</a>
+        <a href="#declaracoes">Declarações</a>
+        <a href="#mensagens-surpresa">Surpresas</a>
+        <a href="#carta-de-amor">Carta</a>
+        <a href="#audios-divertidos">Divertidos</a>
+      </div>
+    </header>
+
+    <!-- Seção Mensagem de Boas-Vindas -->
+    <section id="boas-vindas">
+      <h2>Mensagem de Boas-Vindas</h2>
+      <button
+        onclick="playTrack('assets/Mensagem de boas vindas.mp3', 'Mensagem de Boas-Vindas')"
+      >
+        Ouvir Mensagem
+      </button>
+    </section>
+
+    <!-- Seção Declarações -->
+    <section id="declaracoes">
+      <h2>Declarações</h2>
+      <button onclick="playTrack('assets/Declaração 1.mp3', 'Declaração 1')">
+        Declaração 1
+      </button>
+      <button onclick="playTrack('assets/Declaração 2.mp3', 'Declaração 2')">
+        Declaração 2
+      </button>
+      <button onclick="playTrack('assets/Declaração 3.mp3', 'Declaração 3')">
+        Declaração 3
+      </button>
+      <button onclick="playTrack('assets/Declaração 4.mp3', 'Declaração 4')">
+        Declaração 4
+      </button>
+    </section>
+
+    <!-- Seção Mensagens Surpresa -->
+    <section id="mensagens-surpresa">
+      <h2>Mensagens Surpresa</h2>
+      <button onclick="playTrack('assets/Surpresa 1.mp3', 'Surpresa 1')">
+        Surpresa 1
+      </button>
+      <button
+        onclick="playTrack('assets/Mensagem surpresa 2.mp3', 'Surpresa 2')"
+      >
+        Surpresa 2
+      </button>
+      <button
+        onclick="playTrack('assets/Mensagem surpresa 3.mp3', 'Surpresa 3')"
+      >
+        Surpresa 3
+      </button>
+    </section>
+
+    <!-- Seção Carta de Amor -->
+    <section id="carta-de-amor">
+      <h2>Carta de Amor</h2>
+      <p>
+        Uma carta em forma de som, feita com todo o meu carinho só pra você.
+      </p>
+      <button onclick="playTrack('assets/Carta de amor.mp3', 'Carta de Amor')">
+        Ouvir Carta de Amor
+      </button>
+    </section>
+
+    <!-- Seção Áudios Divertidos -->
+    <section id="audios-divertidos">
+      <h2>Áudios Divertidos</h2>
+      <button
+        onclick="playTrack('assets/Áudio divertido e engraçado 1.mp3', 'Áudio Divertido')"
+      >
+        Ouvir e Sorrir
+      </button>
+    </section>
+
+    <!-- Player de Áudio -->
+    <section id="audio-player-section">
+      <h3 id="audioTitle">Nenhuma faixa tocando</h3>
+      <audio id="audioPlayer" controls></audio>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Capivara FM - Todos os direitos reservados</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

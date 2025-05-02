@@ -1,0 +1,231 @@
+/* Reset e base */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #fbe9e7;
+  color: #333;
+  text-align: center;
+  padding: 20px 10px;
+}
+
+/* Centralização geral */
+header,
+section,
+footer {
+  max-width: 800px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Cabeçalho minimalista */
+header {
+  padding: 30px 20px;
+  border-bottom: 1px solid #f8c1c1;
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(1.8em, 5vw, 2.5em);
+  color: #b71c1c;
+  margin-bottom: 5px;
+  letter-spacing: 1px;
+}
+
+header p {
+  font-family: "Georgia", serif;
+  font-size: 1.1em;
+  color: #7b1fa2;
+  margin-bottom: 10px;
+}
+
+.logo-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.logo {
+  width: 50px;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.logo-title h1 {
+  margin: 0;
+}
+
+/* Links do cabeçalho */
+.header-links {
+  margin-top: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  padding: 0 10px;
+}
+
+.header-links a {
+  color: #b71c1c;
+  text-decoration: none;
+  font-weight: 500;
+  font-family: "Arial", sans-serif;
+  font-size: 1em;
+  padding: 6px 10px;
+  border-radius: 6px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.header-links a:hover {
+  color: #fff;
+  background-color: #b71c1c;
+  text-decoration: none;
+}
+
+/* Menu de navegação (opcional, caso ainda use nav separado) */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #d32f2f;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #c2185b;
+  text-decoration: underline;
+}
+
+/* Seções */
+section {
+  margin: 40px auto;
+  background-color: #fff0f1;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+  color: #d32f2f;
+  font-size: 2.2em;
+  font-family: "Cursive", sans-serif;
+  margin-bottom: 20px;
+}
+
+/* Botões */
+button {
+  background-color: #c2185b;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  margin: 15px 10px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #d32f2f;
+  transform: scale(1.1);
+}
+
+/* Rodapé */
+footer {
+  margin-top: 40px;
+  font-size: 1em;
+  color: #888;
+  font-style: italic;
+}
+
+/* Imagens */
+#capivaras img {
+  width: 100%;
+  max-width: 400px;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Transições suaves */
+button,
+nav a {
+  transition: all 0.3s ease;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2em;
+  }
+
+  header p {
+    font-size: 1em;
+  }
+
+  .header-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .header-links a {
+    font-size: 1.05em;
+    width: 100%;
+    max-width: 300px;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 0;
+  }
+
+  section {
+    padding: 20px;
+    margin: 30px 0;
+  }
+
+  section h2 {
+    font-size: 1.8em;
+  }
+
+  button {
+    padding: 10px 18px;
+    font-size: 16px;
+    margin: 10px 5px;
+  }
+
+  footer {
+    font-size: 0.9em;
+  }
+}
